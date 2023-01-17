@@ -7,12 +7,14 @@ const IPad = () => {
     return (
         <div className='container'>
             {
-                ipad.map((item) => {
+                ipad.map((item, index) => {
                     return (
                         <Card
+                            key={index}
                             img={item.img}
                             title={item.title}
                             price={item.price}
+                            disc={item.disc}
                         />
                     )
                 })

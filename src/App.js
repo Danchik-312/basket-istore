@@ -9,10 +9,12 @@ import Iphone from "./pages/iphone/Iphone";
 import AppleWatch from "./pages/appleWatch/AppleWatch";
 import IPad from "./pages/iPad/IPad";
 import CatalogList from "./pages/catalogList/CatalogList";
+import Header from "./components/header/Header";
 
 const App = () => {
     return (
         <BrowserRouter>
+            <Header/>
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/about' element={<AboutPage/>}/>

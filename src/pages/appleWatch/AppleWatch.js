@@ -6,12 +6,14 @@ const AppleWatch = () => {
     return (
         <div className='container'>
             {
-                apple_watch.map((item => {
+                apple_watch.map(((item, index) => {
                     return(
                         <Card
+                            key={index}
                             img={item.img}
                             title={item.title}
                             price={item.price}
+                            disc={item.disc}
                         />
                     )
                 }))
